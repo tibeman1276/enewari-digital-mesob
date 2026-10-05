@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="am">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Enewari City Administration Digital Mesob — digital public services, information and city administration portal.">
+  <title>እነዋሪ ከተማ አስተዳደር | Digital Mesob</title>
+  <link rel="icon" href="assets/logo.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <meta name="theme-color" content="#063b6c">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Ethiopic:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <span>የእነዋሪ ከተማ አስተዳደር ዲጂታል መሶብ</span>
+      <div class="top-links">
+        <a href="#contact">መገኛ</a><a href="/verify.html">የሰነድ ማረጋገጫ</a>
+        <a href="#help">እገዛ</a>
+        <button class="lang-btn" id="languageBtn" type="button">English</button>
+      </div>
+    </div>
+  </div>
+
+  <header class="header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#home" aria-label="Enewari Digital Mesob home">
+        <img src="assets/logo.png" alt="Enewari City Administration logo">
+        <div>
+          <strong>እነዋሪ ከተማ አስተዳደር</strong>
+          <span>ዲጂታል መሶብ · Digital Mesob</span>
+        </div>
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false">☰</button>
+      <nav id="mainNav">
+        <a class="active" href="#home" data-am="መነሻ" data-en="Home">መነሻ</a>
+        <a href="#about" data-am="ስለ እኛ" data-en="About Us">ስለ እኛ</a>
+        <a href="#services" data-am="አገልግሎቶች" data-en="Services">አገልግሎቶች</a>
+        <a href="#institutions" data-am="ተቋማት" data-en="Institutions">ተቋማት</a>
+        <a href="#news" data-am="ዜና" data-en="News">ዜና</a>
+        <a href="#documents" data-am="ሰነዶች" data-en="Documents">ሰነዶች</a>
+        <a href="#contact" data-am="መገኛ" data-en="Contact">መገኛ</a>
+      </nav>
+      <button class="header-account" id="citizenAccountBtn" type="button">👤 የዜጋ አካውንት</button><a class="header-cta" href="#services">የኦንላይን አገልግሎት <span>→</span></a>
+    </div>
+  </header>
+  <div class="breaking-bar">
+    <div class="container breaking-inner">
+      <span class="breaking-label">🔔 ዜና & ማስታወቂያ</span>
+      <div class="ticker-viewport"><div class="ticker-track" id="tickerTrack">
+        <a href="#news">የእነዋሪ ከተማ አስተዳደር Digital Mesob የዲጂታል አገልግሎት መድረክ በስራ ላይ ውሏል።</a>
+        <a href="#documents">አዲስ የአገልግሎት መመሪያዎችና ቅጾች በሰነድ ማዕከሉ ይገኛሉ።</a>
+        <a href="#institutions">የከተማ አስተዳደሩ 12 ተቋማት በDigital Mesob ተደራጅተዋል።</a>
+        <a href="#services">የውሃ፣ ግብር እና የትራፊክ ቅጣት መረጃዎች በአገልግሎት ማዕከሉ ይገኛሉ።</a>
+      </div></div>
+      <button class="ticker-pause" id="tickerPause" type="button" aria-label="Pause news ticker">Ⅱ</button>
+    </div>
+  </div>
+
+
+  <main id="home">
+    <section class="hero" aria-label="የእነዋሪ ከተማ አስተዳደር ቢሮ">
+      <div class="hero-overlay"></div>
+      <div class="container hero-content">
+        <div class="hero-copy">
+          <span class="eyebrow">ENewari City Administration · Digital Mesob</span>
+          <h1>አገልግሎትን ወደ ዜጋው<br><span>በዲጂታል መንገድ</span></h1>
+          <p>የእነዋሪ ከተማ መረጃ፣ የመንግስት አገልግሎቶች፣ ሰነዶች እና የከተማ ተቋማትን በአንድ ዲጂታል መሶብ ያግኙ።</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#services">አገልግሎቶችን ይመልከቱ <span>→</span></a>
+            <a class="btn btn-light" href="#about">ስለ ከተማው <span>→</span></a>
+          </div>
+          <div class="hero-stats">
+            <div><strong>01</strong><span>ዲጂታል መሶብ</span></div>
+            <div><strong>02</strong><span>የዜጎች አገልግሎት</span></div>
+            <div><strong>03</strong><span>ክፍት መረጃ</span></div>
+          </div>
+        </div>
+        <aside class="hero-card">
+          <div class="weather-icon">🏛️</div>
+          <div class="weather-text"><small>የከተማ አስተዳደር</small><strong>Digital</strong><span>Mesob Portal</span></div>
+          <div class="hero-card-divider"></div>
+          <p>“አገልግሎት ለህዝብ፣<br>ለተሻለ ነገ በጋራ።”</p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="quick-services">
+      <div class="container service-grid">
+        <a class="service-tile" href="#about"><span class="tile-icon blue">⌂</span><b>የከተማ መረጃ</b><small>City Information</small></a>
+        <a class="service-tile" href="#services"><span class="tile-icon green">▣</span><b>አገልግሎቶች</b><small>Public Services</small></a>
+        <a class="service-tile" href="#institutions"><span class="tile-icon purple">▥</span><b>ተቋማት</b><small>Institutions</small></a>
+        <a class="service-tile" href="#documents"><span class="tile-icon orange">▤</span><b>ሰነዶች</b><small>Documents</small></a>
+        <a class="service-tile" href="#tax"><span class="tile-icon teal">₿</span><b>ግብር</b><small>Tax Information</small></a>
+        <a class="service-tile" href="#traffic"><span class="tile-icon red">🚗</span><b>ትራፊክ ቅጣት</b><small>Traffic Fines</small></a>
+        <a class="service-tile" href="#staff"><span class="tile-icon navy">♟</span><b>ሰራተኞች</b><small>Staff Directory</small></a>
+        <a class="service-tile" href="#contact"><span class="tile-icon cyan">⌖</span><b>መገኛ</b><small>Location & Contact</small></a>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container about-grid">
+        <div class="section-heading">
+          <span class="kicker">ABOUT CITY</span>
+          <h2>የከተማውን መረጃ<br>በአንድ ቦታ</h2>
+        </div>
+        <div class="about-copy">
+          <p id="cityAboutAm">የከተማ መግለጫ በAdmin እስኪሞላ ድረስ ይህ ቦታ ባዶ ይሆናል።</p>
+          <p id="cityAboutEn" class="muted"></p>
+          <div class="about-points" id="cityAboutFacts"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section city-facts" id="city-facts">
+      <div class="container">
+        <div class="section-title-row"><div><span class="kicker">CITY PROFILE</span><h2>የከተማ መገለጫ</h2></div><a class="text-link" id="profileSourceLink" target="_blank" rel="noopener" href="#">የመረጃ ምንጭ →</a></div>
+        <div class="facts-grid" id="cityFactsGrid"></div>
+        <div class="source-strip" id="profileSourceStrip"></div>
+      </div>
+    </section>
+
+    <section class="section services-section" id="services">
+      <div class="container">
+        <div class="section-title-row">
+          <div><span class="kicker">DIGITAL SERVICES</span><h2>የዜጎች አገልግሎቶች</h2></div>
+          <a class="text-link" href="#services">ሁሉንም ይመልከቱ →</a>
+        </div>
+        <div class="service-directory-tools"><input id="serviceSearch" type="search" placeholder="🔎 አገልግሎት ይፈልጉ / Search service..." aria-label="Search services"><select id="serviceOfficeFilter" aria-label="Filter by office"><option value="">ሁሉም ፅ/ቤቶች / All offices</option></select><select id="serviceFeeFilter" aria-label="Filter by fee"><option value="">ሁሉም / All</option><option value="free">ነፃ / Free</option><option value="paid">ክፍያ ያለው / Paid</option></select></div>
+        <div class="service-directory-count" id="serviceDirectoryCount"></div>
+        <div class="cards-3" id="publicServiceGrid"><div class="service-card"><h3>አገልግሎቶች በመጫን ላይ...</h3></div></div>
+        <div class="online-services-bar"><div><b>ኦንላይን ጥያቄ ማስገቢያ</b><span>ንግድ፣ መሬት፣ ቅሬታ እና አጠቃላይ ጥያቄዎችንም በመስመር ላይ ይላኩ።</span></div><button class="btn btn-primary" onclick="openServiceRequest('general')">አዲስ ጥያቄ →</button></div>
+        <div class="request-tracker"><div><b>የጥያቄ ሁኔታ ይከታተሉ</b><span>የተሰጠዎትን Reference Number እና ስልክ ያስገቡ።</span></div><form id="statusForm"><input id="statusRef" placeholder="ENW-YYYYMMDD-XXXXX" required><input id="statusPhone" placeholder="ስልክ ቁጥር" required><button class="btn btn-dark">ፈልግ</button></form><div id="statusResult"></div></div>
+      </div>
+    </section>
+
+    <section class="section institutions" id="institutions">
+      <div class="container">
+        <div class="section-title-row">
+          <div><span class="kicker">CITY ADMINISTRATION INSTITUTIONS</span><h2>የእነዋሪ ከተማ አስተዳደር ተቋማት</h2></div>
+          <div class="institution-search"><input id="institutionSearch" type="search" placeholder="ተቋም ይፈልጉ..." aria-label="Search institutions">⌕</div>
+        </div>
+        <p class="section-intro">የከተማ አስተዳደሩን ተቋማት በቀጥታ ይምረጡ፤ የተቋሙን መረጃ፣ አገልግሎቶች፣ ሰነዶችና የመገኛ መረጃ ለማግኘት።</p>
+        <div class="institution-grid full" id="institutionGrid"></div>
+      </div>
+    </section>
+
+    <section class="section news-section" id="news">
+      <div class="container news-grid">
+        <div>
+          <div class="section-title-row"><div><span class="kicker">LATEST NEWS</span><h2>የቅርብ ጊዜ ዜናዎች</h2></div><a class="text-link" href="#news">ሁሉንም →</a></div>
+          <article class="news-feature"><div class="news-image"><span>የከተማ መገለጫ</span></div><div><small>የተረጋገጠ የመረጃ ምንጭ</small><h3>የእነዋሪ ከተማ የUrban Profile ሰነድ በ2025 ታትሟል</h3><p>የከተማውን አመጣጥ፣ አስተዳደራዊ መዋቅር፣ ህዝብ፣ መሰረተልማት፣ ኢኮኖሚ እና ባህል/ቱሪዝም የሚገልጽ የመንግስት ሰነድ ነው።</p><a target="_blank" rel="noopener" href="https://mui.gov.et/wp-content/uploads/2025/12/Enewari-Urban-Profile-2018.pdf">ሰነዱን ይክፈቱ →</a></div></article>
+          <div class="news-list">
+            <a href="#news"><span>04</span><div><small>ኦክቶበር 02, 2026</small><b>የከተማው የልማት እቅድ አዲስ መረጃ</b></div>→</a>
+            <a href="#news"><span>03</span><div><small>ሴፕቴምበር 28, 2026</small><b>ለዜጎች የተሻሻሉ የአገልግሎት ሂደቶች</b></div>→</a>
+          </div>
+        </div>
+        <aside class="quick-box">
+          <span class="kicker">QUICK LINKS</span><h3>ፈጣን መዳረሻ</h3>
+          <a href="#services">ዋና አገልግሎቶች <span>→</span></a>
+          <a href="#institutions">የተቋማት ዝርዝር <span>→</span></a>
+          <a href="#documents">ሰነዶች እና ቅጾች <span>→</span></a>
+          <a href="#contact">ያግኙን <span>→</span></a>
+          <a href="#help">የእገዛ ማዕከል <span>→</span></a>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section documents" id="documents">
+      <div class="container">
+        <div class="section-title-row"><div><span class="kicker">DOCUMENT CENTER</span><h2>ሰነዶችና ማውረጃዎች</h2></div></div>
+        <div class="document-grid">
+          <a target="_blank" rel="noopener" href="https://mui.gov.et/wp-content/uploads/2025/12/Enewari-Urban-Profile-2018.pdf"><span>PDF</span><div><b>የእነዋሪ ከተማ Urban Profile</b><small>Government city profile</small></div>↗</a>
+          <a href="#" onclick="demo('የግብር መመሪያ');return false;"><span>PDF</span><div><b>የግብር መመሪያ</b><small>Tax Guide</small></div>↓</a>
+          <a href="#" onclick="demo('የማመልከቻ ቅጽ');return false;"><span>DOC</span><div><b>የማመልከቻ ቅጽ</b><small>Application Form</small></div>↓</a>
+          <a href="#" onclick="demo('የከተማ ዓመታዊ ሪፖርት');return false;"><span>PDF</span><div><b>የከተማ ዓመታዊ ሪፖርት</b><small>Annual Report</small></div>↓</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section photo-section" id="photos">
+      <div class="container">
+        <div class="section-title-row"><div><span class="kicker">CITY PHOTOS & MAP</span><h2>የከተማው ፎቶዎችና ካርታ</h2></div></div>
+        <div class="photo-source-grid">
+          <a class="photo-source-card" target="_blank" rel="noopener" href="https://mui.gov.et/wp-content/uploads/2025/12/Enewari-Urban-Profile-2018.pdf#page=10"><div class="photo-placeholder market"><span>🚌</span></div><b>የእነዋሪ ከተማ አውቶቡስ ጣቢያ</b><small>ፎቶ ምንጭ፦ የEnewari Urban Profile ሰነድ</small></a>
+          <a class="photo-source-card" target="_blank" rel="noopener" href="https://mui.gov.et/wp-content/uploads/2025/12/Enewari-Urban-Profile-2018.pdf#page=9"><div class="photo-placeholder cattle"><span>🏪</span></div><b>የእነዋሪ ገበያ</b><small>ፎቶ ምንጭ፦ የEnewari Urban Profile ሰነድ</small></a>
+          <a class="photo-source-card map-card" target="_blank" rel="noopener" href="https://www.openstreetmap.org/?mlat=9.8922&mlon=39.1464#map=14/9.8922/39.1464"><div class="map-placeholder"><span>⌖</span></div><b>የእነዋሪ ከተማ ካርታ</b><small>9°53′32″ N · 39°8′47″ E</small></a>
+        </div>
+        <p class="photo-note">ማስታወሻ፦ ከመንግስት ሰነዱ የተገኙ እውነተኛ የገበያና የአውቶቡስ ጣቢያ ፎቶዎች በሰነዱ ውስጥ ይታያሉ። የፎቶዎቹ የድረ-ገጽ ማሳያ ቅጂ በይፋ ከተፈቀደ በኋላ ወደ assets መቀየር ይቻላል።</p>
+      </div>
+    </section>
+
+    <section class="cta-band" id="help">
+      <div class="container cta-inner">
+        <div><span class="kicker">DIGITAL MESOB</span><h2>አገልግሎትን በቀላሉ ያግኙ።</h2><p>የከተማው መረጃና ዲጂታል አገልግሎቶች በአንድ ቦታ።</p></div>
+        <a class="btn btn-white" href="#services">አገልግሎቶችን ይጀምሩ →</a>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="container contact-grid">
+        <div><span class="kicker">CONTACT US</span><h2>ያግኙን</h2><p>ለጥያቄ፣ ለአስተያየት ወይም ለአገልግሎት መረጃ ያግኙን።</p></div>
+        <div class="contact-items">
+          <div><span>⌖</span><b>አድራሻ</b><p>እነዋሪ ከተማ፣ ሞረትና ጅሩ ወረዳ፣ ሰሜን ሸዋ ዞን፣ አማራ ክልል፣ ኢትዮጵያ</p></div>
+          <div><span>☎</span><b>ስልክ</b><p><a href="tel:+251919812680">+251 919 812 680</a></p></div>
+          <div><span>✉</span><b>ኢሜል</b><p><a href="mailto:enewaricity@gmail.com">enewaricity@gmail.com</a></p></div>
+          <div><span>f</span><b>Facebook</b><p><a target="_blank" rel="noopener" href="https://www.facebook.com/share/1YFTVApnwm/">ይከተሉን</a></p></div>
+          <div><span>♪</span><b>TikTok</b><p><a target="_blank" rel="noopener" href="https://www.tiktok.com/@.enewari.city?_r=1&_t=ZS-9AHXy4eir12">ይከተሉን</a></p></div>
+          <div><span>⌖</span><b>አቅጣጫ</b><p><a target="_blank" rel="noopener" href="https://www.openstreetmap.org/?mlat=9.8922&mlon=39.1464#map=14/9.8922/39.1464">9°53′32″ N, 39°8′47″ E</a></p></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+  <div class="citizen-modal" id="citizenModal" aria-hidden="true"><div class="citizen-card"><button class="modal-close" id="citizenClose">×</button><div id="citizenAuthView"><span class="kicker">CITIZEN PORTAL</span><h2>የዜጋ አካውንት</h2><p class="modal-note">ጥያቄዎችዎን፣ ሁኔታቸውን እና ማሳወቂያዎችን በአንድ ቦታ ይከታተሉ።</p><div class="citizen-tabs"><button class="citizen-tab active" data-tab="login">ግባ</button><button class="citizen-tab" data-tab="register">አካውንት ፍጠር</button></div><form id="citizenLoginForm" class="service-form"><input id="citizenLoginPhone" placeholder="ስልክ ቁጥር" required><input id="citizenLoginPassword" type="password" placeholder="የይለፍ ቃል" required><button class="btn btn-primary">ግባ →</button><div id="citizenLoginResult"></div></form><form id="citizenRegisterForm" class="service-form hidden"><input id="citizenRegName" placeholder="ሙሉ ስም" required><input id="citizenRegPhone" placeholder="ስልክ ቁጥር" required><input id="citizenRegEmail" type="email" placeholder="ኢሜል (ካለ)"><input id="citizenRegKebele" placeholder="ቀበሌ (ካለ)"><input id="citizenRegPassword" type="password" minlength="10" placeholder="የይለፍ ቃል (10+ ቁምፊ)" required><button class="btn btn-primary">አካውንት ፍጠር →</button><div id="citizenRegisterResult"></div></form></div><div id="citizenDashboard" class="hidden"><div class="citizen-dashboard-head"><div><span class="kicker">MY DIGITAL MESOB</span><h2 id="citizenName">የእኔ አካውንት</h2></div><button class="small-btn" id="citizenLogout">ውጣ</button></div><div class="citizen-tabs"><button class="citizen-tab active" data-dtab="requests">ጥያቄዎቼ</button><button class="citizen-tab" data-dtab="notifications">ማሳወቂያዎች</button><button class="citizen-tab" data-dtab="profile">መገለጫ</button></div><div id="citizenDashContent"></div></div></div></div>
+
+  <div class="service-modal" id="serviceModal" aria-hidden="true"><div class="service-modal-card"><button class="modal-close" id="serviceClose">×</button><span class="kicker">ONLINE SERVICE</span><h2>የአገልግሎት ጥያቄ ያስገቡ</h2><p class="modal-note">የላኩትን ጥያቄ ለመከታተል የሚሰጥዎትን Reference Number ያስቀምጡ።</p><form id="serviceRequestForm" class="service-form"><select id="serviceKey" required></select><div id="serviceMeta" class="service-meta"></div><div id="serviceDynamicFields" class="service-dynamic-fields"></div><input id="fullName" placeholder="ሙሉ ስም" required><input id="phone" placeholder="ስልክ ቁጥር" required><input id="kebele" placeholder="ቀበሌ (ካለ)"><textarea id="details" placeholder="የጥያቄዎን ዝርዝር ይጻፉ..." required></textarea><label class="upload-label">📎 የሚያስፈልግ ሰነድ/ማስረጃ (ከፍተኛ 5 ፋይሎች)<input id="requestDocuments" type="file" multiple accept=".pdf,.doc,.docx,.xls,.xlsx,.jpg,.jpeg,.png,.webp"></label><button class="btn btn-primary" type="submit">ጥያቄውን ላክ →</button><div id="serviceResult"></div></form></div></div>
+
+  <button class="ai-fab" id="aiFab" aria-label="Open Digital Mesob AI assistant">✦ <span>AI</span></button>
+  <aside class="ai-panel" id="aiPanel" aria-hidden="true">
+    <div class="ai-head"><div><b>Digital Mesob AI</b><small>የከተማ መረጃ ረዳት</small></div><button id="aiClose">×</button></div>
+    <div class="ai-body" id="aiBody">
+      <div class="ai-msg bot">ሰላም! 👋 ስለ እነዋሪ ከተማ፣ ተቋማት ወይም አገልግሎቶች ጥያቄዎን ይጻፉልኝ።</div>
+      <div class="ai-suggestions">
+        <button>የውሃ አገልግሎት እንዴት ነው?</button>
+        <button>የግብር ፅ/ቤት የት ነው?</button>
+        <button>የተቋማት ዝርዝር አሳየኝ</button>
+      </div>
+    </div>
+    <form class="ai-form" id="aiForm"><input id="aiInput" placeholder="ጥያቄዎን ይጻፉ..." autocomplete="off"><button>➤</button></form>
+    <small class="ai-note">AI ረዳቱ ከእውነተኛ የአስተዳደሩ መረጃ/API ጋር ሲገናኝ የበለጠ ትክክለኛ መልስ ይሰጣል።</small>
+  </aside>
+
+  <footer>
+    <div class="container footer-grid">
+      <div class="footer-brand"><img src="assets/logo.png" alt=""><div><b>እነዋሪ ከተማ አስተዳደር</b><small>Digital Mesob</small></div></div>
+      <div><b>ፈጣን መዳረሻ</b><a href="#about">ስለ እኛ</a><a href="#services">አገልግሎቶች</a><a href="#news">ዜና</a></div>
+      <div><b>አገልግሎቶች</b><a href="#services">ውሃ</a><a href="#tax">ግብር</a><a href="#traffic">ትራፊክ</a></div>
+      <div><b>መረጃ</b><a href="#documents">ሰነዶች</a><a href="#contact">መገኛ</a><a href="/verify.html">የሰነድ ማረጋገጫ</a><a href="#help">እገዛ</a></div>
+      <div><b>ማህበራዊ ሚዲያ</b><a class="social-link" target="_blank" rel="noopener" href="https://www.facebook.com/share/1YFTVApnwm/">Facebook</a><a class="social-link" target="_blank" rel="noopener" href="https://www.tiktok.com/@.enewari.city?_r=1&_t=ZS-9AHXy4eir12">TikTok</a><a href="mailto:enewaricity@gmail.com">enewaricity@gmail.com</a></div>
+    </div>
+    <div class="container footer-bottom"><span>© 2026 Enewari City Administration. All rights reserved.</span><span><a target="_blank" rel="noopener" href="https://mui.gov.et/wp-content/uploads/2025/12/Enewari-Urban-Profile-2018.pdf">የመረጃ ምንጭ</a> · Privacy · Terms</span></div>
+  </footer>
+
+  <div class="toast" id="toast"></div>
+  <script src="office-data.js"></script>
+<script src="script.js"></script>
+<script src="portal-api.js"></script>
+<script>if("serviceWorker" in navigator){navigator.serviceWorker.register("/sw.js").catch(()=>{});}</script>
+</body>
+</html>

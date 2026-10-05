@@ -1,0 +1,10 @@
+{
+  "name": "Enewari City Administration Digital Mesob",
+  "short_name": "Enewari Mesob",
+  "lang": "am",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f5f9fc",
+  "theme_color": "#063b6c",
+  "icons": [{"src":"/assets/logo.png","sizes":"192x192","type":"image/png"}]
+}

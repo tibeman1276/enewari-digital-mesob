@@ -1,0 +1,26 @@
+{
+  "name": "enewari-digital-mesob",
+  "version": "24.0.0",
+  "private": true,
+  "description": "Enewari City Administration Digital Mesob - public portal and admin dashboard",
+  "type": "module",
+  "scripts": {
+    "start": "node server/app.js",
+    "dev": "node --watch server/app.js",
+    "init-db": "node server/init-db.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "better-sqlite3": "^12.4.1",
+    "cookie-parser": "^1.4.7",
+    "dotenv": "^17.2.2",
+    "express": "^5.1.0",
+    "express-rate-limit": "^8.2.1",
+    "helmet": "^8.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "multer": "^2.0.2",
+    "openai": "^6.2.0",
+    "nodemailer": "^7.0.6",
+    "qrcode": "^1.5.4"
+  }
+}
